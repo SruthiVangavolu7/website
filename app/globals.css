@@ -7,13 +7,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --font-manrope: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-space-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-bricolage: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --font-instrument-serif: "Instrument Serif", "Times New Roman", Georgia,
-    serif;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --font-manrope: var(--font-manrope), system-ui, sans-serif;
+  --font-space-grotesk: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-bricolage: var(--font-bricolage), system-ui, sans-serif;
+  --font-instrument-serif: var(--font-instrument-serif), Georgia, serif;
 }
