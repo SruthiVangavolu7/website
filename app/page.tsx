@@ -815,9 +815,10 @@ export default function Home() {
         )}
         onOpenChange={() => setActive(null)}
         backdrop="blur"
+        size="5xl"
         classNames={{
           base:
-            "bg-white border border-[#ece7e2] bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:28px_28px]",
+            "w-[90vw] max-w-[600px] bg-white border border-[#ece7e2] bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:28px_28px]",
           header: "text-[#4f4843]",
           body: "text-[#6d6762]",
         }}
@@ -999,26 +1000,49 @@ export default function Home() {
                 ) : null}
 
                 {active?.id === "projects" ? (
-                  <div className="flex flex-col gap-4 md:flex-row md:items-start">
-                    <img
-                      src="/pomodoropreview.PNG"
-                      alt="pomodoro study timer preview"
-                      className="h-auto w-full max-w-[220px] rounded-xl border border-[#eee6e2] object-cover"
-                    />
-                    <p className="text-xs font-[family-name:var(--font-instrument-serif)] leading-relaxed text-[#5f5752]">
-                      i couldn&apos;t focus so i drew and built a pomodoro study timer. i still
-                      can&apos;t
-                      focus, but click{" "}
-                      <a
-                        href="https://pomodoro-nu-liard.vercel.app/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="underline underline-offset-2"
-                      >
-                        here
-                      </a>{" "}
-                      to try it out.
-                    </p>
+                  <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-4 md:flex-row md:items-center">
+                      <img
+                        src="/pomodoropreview.PNG"
+                        alt="pomodoro study timer preview"
+                        className="h-auto w-full max-w-[220px] rounded-xl border border-[#eee6e2] object-cover"
+                      />
+                      <p className="text-sm font-[family-name:var(--font-instrument-serif)] leading-relaxed text-[#5f5752] md:text-base">
+                        i couldn&apos;t focus so i drew and built a pomodoro study timer. i still
+                        can&apos;t
+                        focus, but click{" "}
+                        <a
+                          href="https://pomodoro-nu-liard.vercel.app/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline underline-offset-2"
+                        >
+                          here
+                        </a>{" "}
+                        to try it out.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-col gap-4 md:flex-row md:items-center">
+                      <p className="text-sm font-[family-name:var(--font-instrument-serif)] leading-relaxed text-[#5f5752] md:text-base">
+                        wip: wanted to learn trading and stocks so i made this ml model that lets
+                        you make a guess on the market and tells if u if you made the right
+                        predicted decision. try it{" "}
+                        <a
+                          href="https://finmodel-12345.streamlit.app/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline underline-offset-2"
+                        >
+                          here
+                        </a>
+                      </p>
+                      <img
+                        src="/finmodelpreview.PNG"
+                        alt="finmodel preview"
+                        className="h-auto w-full max-w-[220px] rounded-xl border border-[#eee6e2] object-cover md:ml-auto"
+                      />
+                    </div>
                   </div>
                 ) : null}
 
