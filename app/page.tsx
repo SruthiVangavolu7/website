@@ -999,9 +999,27 @@ export default function Home() {
                 ) : null}
 
                 {active?.id === "projects" ? (
-                  <p className="text-xs uppercase tracking-[0.3em] text-[#a79b97]">
-                    coming soon...
-                  </p>
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start">
+                    <img
+                      src="/pomodoropreview.PNG"
+                      alt="pomodoro study timer preview"
+                      className="h-auto w-full max-w-[220px] rounded-xl border border-[#eee6e2] object-cover"
+                    />
+                    <p className="text-xs font-[family-name:var(--font-instrument-serif)] leading-relaxed text-[#5f5752]">
+                      i couldn&apos;t focus so i drew and built a pomodoro study timer. i still
+                      can&apos;t
+                      focus, but click{" "}
+                      <a
+                        href="https://pomodoro-nu-liard.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-2"
+                      >
+                        here
+                      </a>{" "}
+                      to try it out.
+                    </p>
+                  </div>
                 ) : null}
 
                 {![
