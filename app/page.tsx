@@ -762,11 +762,11 @@ export default function Home() {
               <div className="flex gap-6">
                 {[
                   "/Untitled19_20251229200435.PNG",
-                  "/IMG_8576.jpg",
-                  "/IMG_1893.jpg",
+                  "/IMG_8576.jpeg",
+                  "/IMG_1893.jpeg",
                   "/IMG_1785.JPG",
-                  "/IMG_1762.jpeg",
-                  "/IMG_2166.jpg",
+                  "/IMG_1762.jpg",
+                  "/IMG_2166.jpeg",
                   "/IMG_1600.jpeg",
                   "/IMG_2169.jpeg",
                   "/IMG_7976.jpg",
