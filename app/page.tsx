@@ -765,13 +765,13 @@ export default function Home() {
                   "/IMG_8576.jpeg",
                   "/IMG_1893.jpeg",
                   "/IMG_1785.JPG",
-                  "/IMG_1762.jpg",
-                  "/IMG_2166.jpeg",
+                  "/IMG_1762.jpeg",
+                  "/IMG_2166.jpg",
                   "/IMG_1600.jpeg",
                   "/IMG_2169.jpeg",
-                  "/IMG_7976.jpg",
-                  "/IMG_7619.jpg",
-                  "/IMG_8683.jpg",
+                  "/IMG_7976.jpeg",
+                  "/IMG_7619.jpeg",
+                  "/IMG_8683.jpeg",
                 ].map((src, i) => (
                   <motion.div
                     key={`art-slot-${src}`}
