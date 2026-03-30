@@ -715,9 +715,14 @@ export default function Home() {
                       className="h-full w-full object-cover"
                       onError={(event) => {
                         const target = event.currentTarget;
-                        if (!target.dataset.fallback) {
-                          target.dataset.fallback = "true";
-                          target.src = src.replace(".jpg", ".JPG");
+                        if (target.dataset.fallback) return;
+                        target.dataset.fallback = "true";
+                        if (src.toLowerCase().endsWith(".jpg")) {
+                          target.src = src.replace(/\.jpg$/i, ".JPG");
+                        } else if (src.toLowerCase().endsWith(".jpeg")) {
+                          target.src = src.replace(/\.jpeg$/i, ".jpg");
+                        } else if (src.toLowerCase().endsWith(".png")) {
+                          target.src = src.replace(/\.png$/i, ".PNG");
                         }
                       }}
                     />
@@ -759,14 +764,14 @@ export default function Home() {
                   "/Untitled19_20251229200435.PNG",
                   "/IMG_8576.jpg",
                   "/IMG_1893.jpg",
-                  "/IMG_1785.jpg",
-                  "/IMG_1762.jpg",
+                  "/IMG_1785.JPG",
+                  "/IMG_1762.jpeg",
                   "/IMG_2166.jpg",
-                  "/IMG_1600.jpg",
-                  "/IMG_2169.jpg",
+                  "/IMG_1600.jpeg",
+                  "/IMG_2169.jpeg",
                   "/IMG_7976.jpg",
                   "/IMG_7619.jpg",
-                  "/IMG_8693.jpg",
+                  "/IMG_8683.jpg",
                 ].map((src, i) => (
                   <motion.div
                     key={`art-slot-${src}`}
@@ -781,9 +786,14 @@ export default function Home() {
                       className="h-full w-full object-cover"
                       onError={(event) => {
                         const target = event.currentTarget;
-                        if (!target.dataset.fallback) {
-                          target.dataset.fallback = "true";
-                          target.src = src.replace(".jpg", ".JPG");
+                        if (target.dataset.fallback) return;
+                        target.dataset.fallback = "true";
+                        if (src.toLowerCase().endsWith(".jpg")) {
+                          target.src = src.replace(/\.jpg$/i, ".JPG");
+                        } else if (src.toLowerCase().endsWith(".jpeg")) {
+                          target.src = src.replace(/\.jpeg$/i, ".jpg");
+                        } else if (src.toLowerCase().endsWith(".png")) {
+                          target.src = src.replace(/\.png$/i, ".PNG");
                         }
                       }}
                     />
