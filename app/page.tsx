@@ -698,11 +698,8 @@ export default function Home() {
                   "/IMG_7825.jpg",
                   "/IMG_7822.jpg",
                   "/IMG_3983.jpg",
-                  "/IMG_3983.jpg",
                   "/IMG_5135.jpg",
                   "/IMG_5272.jpg",
-                  "/IMG_7827.jpg",
-                  "/IMG_9663.jpg",
                   "/_DSC2530.jpg",
                 ].map((src, i) => (
                   <motion.div
@@ -759,17 +756,17 @@ export default function Home() {
             <div className="mt-6 flex-1 overflow-x-auto pb-4">
               <div className="flex gap-6">
                 {[
-                  "/IMG_1762.jpg",
-                  "/IMG_1785.jpg",
-                  "/IMG_1893.jpg",
-                  "/IMG_1940.jpg",
-                  "/IMG_1964.jpg",
-                  "/IMG_2166.jpg",
-                  "/IMG_2171.jpg",
-                  "/IMG_7619.jpg",
-                  "/IMG_7976.jpg",
-                  "/IMG_8255.jpg",
+                  "/Untitled19_20251229200435.PNG",
                   "/IMG_8576.jpg",
+                  "/IMG_1893.jpg",
+                  "/IMG_1785.jpg",
+                  "/IMG_1762.jpg",
+                  "/IMG_2166.jpg",
+                  "/IMG_1600.jpg",
+                  "/IMG_2169.jpg",
+                  "/IMG_7976.jpg",
+                  "/IMG_7619.jpg",
+                  "/IMG_8693.jpg",
                 ].map((src, i) => (
                   <motion.div
                     key={`art-slot-${src}`}
