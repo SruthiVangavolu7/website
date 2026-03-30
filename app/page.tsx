@@ -695,9 +695,9 @@ export default function Home() {
               <div className="flex gap-6">
                 {[
                   "/IMG_3119.jpg",
-                  "/IMG_3974.jpg",
-                  "/IMG_3978.jpg",
-                  "/IMG_3981.jpg",
+                  "/IMG_7825.jpg",
+                  "/IMG_7822.jpg",
+                  "/IMG_3983.jpg",
                   "/IMG_3983.jpg",
                   "/IMG_5135.jpg",
                   "/IMG_5272.jpg",
